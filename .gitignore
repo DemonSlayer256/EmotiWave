@@ -1,0 +1,22 @@
+# Raw dataset files
+data/raw/*.mat
+data/raw/*.zip
+
+# Processed data
+data/processed/*
+!data/processed/.gitkeep
+
+# Interim data
+data/interim/*
+!data/interim/.gitkeep
+
+# Models
+models/*
+!models/.gitkeep
+
+# Python cache
+__pycache__/
+*.pyc
+
+#environment
+env/
