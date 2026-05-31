@@ -1,0 +1,59 @@
+{
+  "dataset_name": "DREAMER - Database for Emotion Analysis using Physiological Signals — EEG and ECG Recordings",
+  "sources_and_credits": {
+"dataset_sources": {
+    "official": {
+      "name": "DREAMER Dataset",
+      "url": "https://zenodo.org/records/546113"
+    },
+    "mirror": {
+      "name": "DREAMER Dataset Kaggle Mirror",
+      "url": "https://www.kaggle.com/datasets/phhasian0710/dreamer"
+    }
+  },
+  "local_files": {
+    "mat_file": "dreamer.mat",
+    "archive_file": "DREAMER.zip"
+  }
+},
+  "subjects": 23,
+  "video_sequences_per_subject": 18,
+  "total_trials": 414,
+  "eeg_sampling_rate_hz": 128,
+  "ecg_sampling_rate_hz": 256,
+  "eeg_channels": 14,
+  "eeg_electrodes": [
+    "AF3","F7","F3","FC5",
+    "T7","P7","O1","O2",
+    "P8","T8","FC6","F4",
+    "F8","AF4"
+  ],
+  "top_level_fields": [
+    "Data",
+    "EEG_SamplingRate",
+    "ECG_SamplingRate",
+    "EEG_Electrodes",
+    "noOfSubjects",
+    "noOfVideoSequences",
+    "Disclaimer",
+    "Provider",
+    "Version",
+    "Acknowledgement"
+  ],
+  "subject_fields": [
+    "Age",
+    "Gender",
+    "EEG",
+    "ECG",
+    "ScoreValence",
+    "ScoreArousal",
+    "ScoreDominance"
+  ],
+  "eeg_fields": [
+    "baseline",
+    "stimuli"
+  ],
+  "baseline_shape": [7808, 14],
+  "stimulus_shape": [25472, 14],
+  "label_range": [1, 5]
+}
