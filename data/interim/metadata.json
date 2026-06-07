@@ -1,0 +1,7040 @@
+[
+    {
+        "subject_id": 1,
+        "trial_id": 1,
+        "eeg_file": "S01_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 2,
+        "eeg_file": "S01_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 1.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 3,
+        "eeg_file": "S01_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 4,
+        "eeg_file": "S01_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 5,
+        "eeg_file": "S01_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 6,
+        "eeg_file": "S01_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 7,
+        "eeg_file": "S01_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 8,
+        "eeg_file": "S01_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 9,
+        "eeg_file": "S01_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 10,
+        "eeg_file": "S01_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 11,
+        "eeg_file": "S01_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 12,
+        "eeg_file": "S01_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 13,
+        "eeg_file": "S01_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 14,
+        "eeg_file": "S01_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 1.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 15,
+        "eeg_file": "S01_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 16,
+        "eeg_file": "S01_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 17,
+        "eeg_file": "S01_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 1,
+        "trial_id": 18,
+        "eeg_file": "S01_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 22,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 1,
+        "eeg_file": "S02_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 2,
+        "eeg_file": "S02_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 3,
+        "eeg_file": "S02_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 4,
+        "eeg_file": "S02_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 5,
+        "eeg_file": "S02_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 6,
+        "eeg_file": "S02_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 7,
+        "eeg_file": "S02_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 8,
+        "eeg_file": "S02_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 9,
+        "eeg_file": "S02_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 10,
+        "eeg_file": "S02_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 11,
+        "eeg_file": "S02_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 12,
+        "eeg_file": "S02_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 13,
+        "eeg_file": "S02_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 14,
+        "eeg_file": "S02_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 15,
+        "eeg_file": "S02_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 16,
+        "eeg_file": "S02_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 17,
+        "eeg_file": "S02_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 2,
+        "trial_id": 18,
+        "eeg_file": "S02_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 30,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 1,
+        "eeg_file": "S03_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 2,
+        "eeg_file": "S03_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 5.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 3,
+        "eeg_file": "S03_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 4,
+        "eeg_file": "S03_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 5,
+        "eeg_file": "S03_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 6,
+        "eeg_file": "S03_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 7,
+        "eeg_file": "S03_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 8,
+        "eeg_file": "S03_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 9,
+        "eeg_file": "S03_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 10,
+        "eeg_file": "S03_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 11,
+        "eeg_file": "S03_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 1.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 12,
+        "eeg_file": "S03_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 13,
+        "eeg_file": "S03_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 14,
+        "eeg_file": "S03_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 15,
+        "eeg_file": "S03_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 16,
+        "eeg_file": "S03_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 1.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 17,
+        "eeg_file": "S03_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 3,
+        "trial_id": 18,
+        "eeg_file": "S03_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 27,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 1,
+        "eeg_file": "S04_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 1.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 2,
+        "eeg_file": "S04_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 3,
+        "eeg_file": "S04_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 4,
+        "eeg_file": "S04_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 5,
+        "eeg_file": "S04_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 6,
+        "eeg_file": "S04_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 7,
+        "eeg_file": "S04_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 8,
+        "eeg_file": "S04_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 9,
+        "eeg_file": "S04_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 10,
+        "eeg_file": "S04_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 11,
+        "eeg_file": "S04_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 1.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 12,
+        "eeg_file": "S04_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 1.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 13,
+        "eeg_file": "S04_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 14,
+        "eeg_file": "S04_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 15,
+        "eeg_file": "S04_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 16,
+        "eeg_file": "S04_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 1.0,
+        "dominance": 1.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 17,
+        "eeg_file": "S04_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 4,
+        "trial_id": 18,
+        "eeg_file": "S04_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 1,
+        "eeg_file": "S05_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 2,
+        "eeg_file": "S05_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 3,
+        "eeg_file": "S05_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 4,
+        "eeg_file": "S05_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 5,
+        "eeg_file": "S05_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 6,
+        "eeg_file": "S05_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 7,
+        "eeg_file": "S05_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 8,
+        "eeg_file": "S05_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 9,
+        "eeg_file": "S05_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 10,
+        "eeg_file": "S05_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 11,
+        "eeg_file": "S05_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 12,
+        "eeg_file": "S05_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 1.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 13,
+        "eeg_file": "S05_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 14,
+        "eeg_file": "S05_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 15,
+        "eeg_file": "S05_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 16,
+        "eeg_file": "S05_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 17,
+        "eeg_file": "S05_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 5,
+        "trial_id": 18,
+        "eeg_file": "S05_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 27,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 1,
+        "eeg_file": "S06_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 2,
+        "eeg_file": "S06_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 3,
+        "eeg_file": "S06_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 4,
+        "eeg_file": "S06_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 5,
+        "eeg_file": "S06_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 6,
+        "eeg_file": "S06_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 7,
+        "eeg_file": "S06_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 8,
+        "eeg_file": "S06_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 9,
+        "eeg_file": "S06_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 10,
+        "eeg_file": "S06_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 11,
+        "eeg_file": "S06_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 12,
+        "eeg_file": "S06_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 13,
+        "eeg_file": "S06_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 14,
+        "eeg_file": "S06_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 15,
+        "eeg_file": "S06_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 16,
+        "eeg_file": "S06_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 17,
+        "eeg_file": "S06_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 6,
+        "trial_id": 18,
+        "eeg_file": "S06_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 1,
+        "eeg_file": "S07_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 2,
+        "eeg_file": "S07_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 3,
+        "eeg_file": "S07_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 4,
+        "eeg_file": "S07_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 5,
+        "eeg_file": "S07_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 6,
+        "eeg_file": "S07_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 7,
+        "eeg_file": "S07_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 8,
+        "eeg_file": "S07_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 9,
+        "eeg_file": "S07_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 10,
+        "eeg_file": "S07_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 11,
+        "eeg_file": "S07_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 12,
+        "eeg_file": "S07_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 13,
+        "eeg_file": "S07_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 14,
+        "eeg_file": "S07_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 15,
+        "eeg_file": "S07_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 16,
+        "eeg_file": "S07_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 17,
+        "eeg_file": "S07_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 7,
+        "trial_id": 18,
+        "eeg_file": "S07_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 1,
+        "eeg_file": "S08_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 2,
+        "eeg_file": "S08_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 3,
+        "eeg_file": "S08_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 4,
+        "eeg_file": "S08_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 5,
+        "eeg_file": "S08_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 6,
+        "eeg_file": "S08_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 7,
+        "eeg_file": "S08_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 1.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 8,
+        "eeg_file": "S08_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 9,
+        "eeg_file": "S08_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 10,
+        "eeg_file": "S08_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 11,
+        "eeg_file": "S08_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 12,
+        "eeg_file": "S08_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 13,
+        "eeg_file": "S08_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 14,
+        "eeg_file": "S08_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 1.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 15,
+        "eeg_file": "S08_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 16,
+        "eeg_file": "S08_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 17,
+        "eeg_file": "S08_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 8,
+        "trial_id": 18,
+        "eeg_file": "S08_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 1,
+        "eeg_file": "S09_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 2,
+        "eeg_file": "S09_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 3,
+        "eeg_file": "S09_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 4,
+        "eeg_file": "S09_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 5,
+        "eeg_file": "S09_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 6,
+        "eeg_file": "S09_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 7,
+        "eeg_file": "S09_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 8,
+        "eeg_file": "S09_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 9,
+        "eeg_file": "S09_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 10,
+        "eeg_file": "S09_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 11,
+        "eeg_file": "S09_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 12,
+        "eeg_file": "S09_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 13,
+        "eeg_file": "S09_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 14,
+        "eeg_file": "S09_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 15,
+        "eeg_file": "S09_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 16,
+        "eeg_file": "S09_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 17,
+        "eeg_file": "S09_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 9,
+        "trial_id": 18,
+        "eeg_file": "S09_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 31,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 1,
+        "eeg_file": "S10_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 1.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 2,
+        "eeg_file": "S10_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 3,
+        "eeg_file": "S10_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 4,
+        "eeg_file": "S10_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 5,
+        "eeg_file": "S10_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 6,
+        "eeg_file": "S10_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 7,
+        "eeg_file": "S10_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 8,
+        "eeg_file": "S10_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 9,
+        "eeg_file": "S10_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 10,
+        "eeg_file": "S10_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 11,
+        "eeg_file": "S10_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 1.0,
+        "dominance": 1.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 12,
+        "eeg_file": "S10_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 13,
+        "eeg_file": "S10_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 14,
+        "eeg_file": "S10_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 15,
+        "eeg_file": "S10_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 16,
+        "eeg_file": "S10_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 17,
+        "eeg_file": "S10_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 10,
+        "trial_id": 18,
+        "eeg_file": "S10_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 24,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 1,
+        "eeg_file": "S11_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 1.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 2,
+        "eeg_file": "S11_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 3,
+        "eeg_file": "S11_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 4,
+        "eeg_file": "S11_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 5,
+        "eeg_file": "S11_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 6,
+        "eeg_file": "S11_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 7,
+        "eeg_file": "S11_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 2.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 8,
+        "eeg_file": "S11_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 9,
+        "eeg_file": "S11_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 10,
+        "eeg_file": "S11_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 11,
+        "eeg_file": "S11_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 12,
+        "eeg_file": "S11_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 13,
+        "eeg_file": "S11_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 14,
+        "eeg_file": "S11_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 15,
+        "eeg_file": "S11_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 16,
+        "eeg_file": "S11_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 17,
+        "eeg_file": "S11_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 11,
+        "trial_id": 18,
+        "eeg_file": "S11_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 1,
+        "eeg_file": "S12_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 2,
+        "eeg_file": "S12_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 3,
+        "eeg_file": "S12_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 4,
+        "eeg_file": "S12_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 5,
+        "eeg_file": "S12_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 6,
+        "eeg_file": "S12_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 7,
+        "eeg_file": "S12_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 8,
+        "eeg_file": "S12_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 9,
+        "eeg_file": "S12_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 10,
+        "eeg_file": "S12_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 11,
+        "eeg_file": "S12_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 12,
+        "eeg_file": "S12_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 13,
+        "eeg_file": "S12_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 14,
+        "eeg_file": "S12_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 15,
+        "eeg_file": "S12_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 16,
+        "eeg_file": "S12_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 17,
+        "eeg_file": "S12_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 12,
+        "trial_id": 18,
+        "eeg_file": "S12_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 1,
+        "eeg_file": "S13_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 2,
+        "eeg_file": "S13_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 3,
+        "eeg_file": "S13_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 4,
+        "eeg_file": "S13_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 5,
+        "eeg_file": "S13_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 6,
+        "eeg_file": "S13_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 7,
+        "eeg_file": "S13_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 8,
+        "eeg_file": "S13_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 9,
+        "eeg_file": "S13_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 10,
+        "eeg_file": "S13_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 11,
+        "eeg_file": "S13_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 12,
+        "eeg_file": "S13_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 13,
+        "eeg_file": "S13_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 14,
+        "eeg_file": "S13_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 15,
+        "eeg_file": "S13_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 16,
+        "eeg_file": "S13_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 17,
+        "eeg_file": "S13_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 13,
+        "trial_id": 18,
+        "eeg_file": "S13_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 1,
+        "eeg_file": "S14_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 2,
+        "eeg_file": "S14_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 3,
+        "eeg_file": "S14_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 4,
+        "eeg_file": "S14_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 5,
+        "eeg_file": "S14_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 6,
+        "eeg_file": "S14_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 7,
+        "eeg_file": "S14_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 8,
+        "eeg_file": "S14_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 9,
+        "eeg_file": "S14_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 10,
+        "eeg_file": "S14_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 11,
+        "eeg_file": "S14_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 12,
+        "eeg_file": "S14_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 1.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 13,
+        "eeg_file": "S14_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 14,
+        "eeg_file": "S14_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 15,
+        "eeg_file": "S14_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 1.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 16,
+        "eeg_file": "S14_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 17,
+        "eeg_file": "S14_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 14,
+        "trial_id": 18,
+        "eeg_file": "S14_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 1,
+        "eeg_file": "S15_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 2,
+        "eeg_file": "S15_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 3,
+        "eeg_file": "S15_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 4,
+        "eeg_file": "S15_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 5,
+        "eeg_file": "S15_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 6,
+        "eeg_file": "S15_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 7,
+        "eeg_file": "S15_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 8,
+        "eeg_file": "S15_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 9,
+        "eeg_file": "S15_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 10,
+        "eeg_file": "S15_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 11,
+        "eeg_file": "S15_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 1.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 12,
+        "eeg_file": "S15_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 13,
+        "eeg_file": "S15_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 14,
+        "eeg_file": "S15_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 15,
+        "eeg_file": "S15_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 16,
+        "eeg_file": "S15_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 17,
+        "eeg_file": "S15_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 15,
+        "trial_id": 18,
+        "eeg_file": "S15_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 29,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 1,
+        "eeg_file": "S16_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 2,
+        "eeg_file": "S16_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 1.0,
+        "dominance": 1.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 3,
+        "eeg_file": "S16_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 4,
+        "eeg_file": "S16_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 5,
+        "eeg_file": "S16_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 6,
+        "eeg_file": "S16_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 7,
+        "eeg_file": "S16_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 8,
+        "eeg_file": "S16_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 9,
+        "eeg_file": "S16_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 10,
+        "eeg_file": "S16_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 11,
+        "eeg_file": "S16_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 12,
+        "eeg_file": "S16_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 13,
+        "eeg_file": "S16_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 14,
+        "eeg_file": "S16_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 1.0,
+        "dominance": 1.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 15,
+        "eeg_file": "S16_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 16,
+        "eeg_file": "S16_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 17,
+        "eeg_file": "S16_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 16,
+        "trial_id": 18,
+        "eeg_file": "S16_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 28,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 1,
+        "eeg_file": "S17_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 1.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 2,
+        "eeg_file": "S17_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 3,
+        "eeg_file": "S17_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 4,
+        "eeg_file": "S17_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 5,
+        "eeg_file": "S17_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 6,
+        "eeg_file": "S17_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 7,
+        "eeg_file": "S17_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 8,
+        "eeg_file": "S17_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 9,
+        "eeg_file": "S17_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 10,
+        "eeg_file": "S17_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 11,
+        "eeg_file": "S17_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 1.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 12,
+        "eeg_file": "S17_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 13,
+        "eeg_file": "S17_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 14,
+        "eeg_file": "S17_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 15,
+        "eeg_file": "S17_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 16,
+        "eeg_file": "S17_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 17,
+        "eeg_file": "S17_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 17,
+        "trial_id": 18,
+        "eeg_file": "S17_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 26,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 1,
+        "eeg_file": "S18_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 2,
+        "eeg_file": "S18_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 3,
+        "eeg_file": "S18_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 4,
+        "eeg_file": "S18_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 5,
+        "eeg_file": "S18_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 6,
+        "eeg_file": "S18_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 7,
+        "eeg_file": "S18_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 8,
+        "eeg_file": "S18_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 9,
+        "eeg_file": "S18_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 10,
+        "eeg_file": "S18_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 11,
+        "eeg_file": "S18_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 12,
+        "eeg_file": "S18_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 13,
+        "eeg_file": "S18_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 14,
+        "eeg_file": "S18_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 15,
+        "eeg_file": "S18_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 16,
+        "eeg_file": "S18_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 17,
+        "eeg_file": "S18_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 18,
+        "trial_id": 18,
+        "eeg_file": "S18_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 25,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 1,
+        "eeg_file": "S19_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 1.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 2,
+        "eeg_file": "S19_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 3,
+        "eeg_file": "S19_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 4,
+        "eeg_file": "S19_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 5,
+        "eeg_file": "S19_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 6,
+        "eeg_file": "S19_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 7,
+        "eeg_file": "S19_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 8,
+        "eeg_file": "S19_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 9,
+        "eeg_file": "S19_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 10,
+        "eeg_file": "S19_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 11,
+        "eeg_file": "S19_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 12,
+        "eeg_file": "S19_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 13,
+        "eeg_file": "S19_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 14,
+        "eeg_file": "S19_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 15,
+        "eeg_file": "S19_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 16,
+        "eeg_file": "S19_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 17,
+        "eeg_file": "S19_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 19,
+        "trial_id": 18,
+        "eeg_file": "S19_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 33,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 1,
+        "eeg_file": "S20_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 2,
+        "eeg_file": "S20_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 3,
+        "eeg_file": "S20_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 4,
+        "eeg_file": "S20_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 5,
+        "eeg_file": "S20_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 6,
+        "eeg_file": "S20_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 7,
+        "eeg_file": "S20_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 3.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 8,
+        "eeg_file": "S20_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 9,
+        "eeg_file": "S20_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 10,
+        "eeg_file": "S20_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 11,
+        "eeg_file": "S20_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 12,
+        "eeg_file": "S20_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 13,
+        "eeg_file": "S20_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 14,
+        "eeg_file": "S20_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 15,
+        "eeg_file": "S20_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 16,
+        "eeg_file": "S20_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 17,
+        "eeg_file": "S20_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 20,
+        "trial_id": 18,
+        "eeg_file": "S20_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 23,
+        "gender": "female",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 1,
+        "eeg_file": "S21_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 2,
+        "eeg_file": "S21_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 3,
+        "eeg_file": "S21_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 4,
+        "eeg_file": "S21_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 5,
+        "eeg_file": "S21_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 6,
+        "eeg_file": "S21_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 7,
+        "eeg_file": "S21_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 8,
+        "eeg_file": "S21_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 9,
+        "eeg_file": "S21_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 10,
+        "eeg_file": "S21_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 11,
+        "eeg_file": "S21_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 12,
+        "eeg_file": "S21_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 13,
+        "eeg_file": "S21_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 14,
+        "eeg_file": "S21_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 15,
+        "eeg_file": "S21_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 16,
+        "eeg_file": "S21_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 17,
+        "eeg_file": "S21_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 21,
+        "trial_id": 18,
+        "eeg_file": "S21_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 26,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 1,
+        "eeg_file": "S22_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 2,
+        "eeg_file": "S22_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 3,
+        "eeg_file": "S22_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 4,
+        "eeg_file": "S22_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 5,
+        "eeg_file": "S22_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 6,
+        "eeg_file": "S22_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 7,
+        "eeg_file": "S22_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 8,
+        "eeg_file": "S22_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 9,
+        "eeg_file": "S22_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 10,
+        "eeg_file": "S22_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 11,
+        "eeg_file": "S22_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 1.0,
+        "dominance": 1.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 12,
+        "eeg_file": "S22_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 13,
+        "eeg_file": "S22_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 1.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 14,
+        "eeg_file": "S22_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 1.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 15,
+        "eeg_file": "S22_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 16,
+        "eeg_file": "S22_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 17,
+        "eeg_file": "S22_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 22,
+        "trial_id": 18,
+        "eeg_file": "S22_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 28,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 1,
+        "eeg_file": "S23_T01.npy",
+        "shape": [
+            25472,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 1.0,
+        "dominance": 1.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 2,
+        "eeg_file": "S23_T02.npy",
+        "shape": [
+            16768,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 3,
+        "eeg_file": "S23_T03.npy",
+        "shape": [
+            44544,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 3.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 4,
+        "eeg_file": "S23_T04.npy",
+        "shape": [
+            21248,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 5,
+        "eeg_file": "S23_T05.npy",
+        "shape": [
+            17408,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 4.0,
+        "dominance": 4.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 6,
+        "eeg_file": "S23_T06.npy",
+        "shape": [
+            24320,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 5.0,
+        "arousal": 4.0,
+        "dominance": 5.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 7,
+        "eeg_file": "S23_T07.npy",
+        "shape": [
+            24576,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 1.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 8,
+        "eeg_file": "S23_T08.npy",
+        "shape": [
+            50432,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 1.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 9,
+        "eeg_file": "S23_T09.npy",
+        "shape": [
+            18560,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 10,
+        "eeg_file": "S23_T10.npy",
+        "shape": [
+            8576,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 5.0,
+        "dominance": 5.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 11,
+        "eeg_file": "S23_T11.npy",
+        "shape": [
+            12288,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 1.0,
+        "dominance": 1.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 12,
+        "eeg_file": "S23_T12.npy",
+        "shape": [
+            23168,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 13,
+        "eeg_file": "S23_T13.npy",
+        "shape": [
+            47104,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 4.0,
+        "arousal": 3.0,
+        "dominance": 3.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 14,
+        "eeg_file": "S23_T14.npy",
+        "shape": [
+            21760,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 15,
+        "eeg_file": "S23_T15.npy",
+        "shape": [
+            39424,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 16,
+        "eeg_file": "S23_T16.npy",
+        "shape": [
+            24960,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 3.0,
+        "arousal": 3.0,
+        "dominance": 2.0,
+        "valence_class": 1,
+        "arousal_class": 1,
+        "dominance_class": 0
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 17,
+        "eeg_file": "S23_T17.npy",
+        "shape": [
+            32768,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 2.0,
+        "dominance": 4.0,
+        "valence_class": 0,
+        "arousal_class": 0,
+        "dominance_class": 1
+    },
+    {
+        "subject_id": 23,
+        "trial_id": 18,
+        "eeg_file": "S23_T18.npy",
+        "shape": [
+            23808,
+            14
+        ],
+        "age": 25,
+        "gender": "male",
+        "valence": 2.0,
+        "arousal": 4.0,
+        "dominance": 2.0,
+        "valence_class": 0,
+        "arousal_class": 1,
+        "dominance_class": 0
+    }
+]
