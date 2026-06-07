@@ -31,7 +31,7 @@ def create_binary_label(score: float) -> int:
     High emotion = >= 3
     Low emotion  = < 3
     """
-    return int(score >= 3.0)
+    return int(score > 3.0)
 
 
 def load_dataset():
