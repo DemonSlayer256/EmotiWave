@@ -28,8 +28,8 @@ def create_binary_label(score: float) -> int:
     """
     DREAMER ratings are on a 1-5 scale.
 
-    High emotion = >= 3
-    Low emotion  = < 3
+    High emotion = > 3
+    Low emotion  = <= 3
     """
     return int(score > 3.0)
 
@@ -55,15 +55,31 @@ def extract_subject_metadata(subject):
     return age, gender
 
 
-def save_trial_eeg(eeg_data, subject_id, trial_id):
-    filename = f"S{subject_id:02d}_T{trial_id:02d}.npy"
+def save_trial_eeg(
+    stimulus_eeg,
+    baseline_eeg,
+    subject_id,
+    trial_id
+):
+    stimulus_file = (
+        f"S{subject_id:02d}_T{trial_id:02d}_stimulus.npy"
+    )
 
-    filepath = OUTPUT_DIR / filename
+    baseline_file = (
+        f"S{subject_id:02d}_T{trial_id:02d}_baseline.npy"
+    )
 
-    np.save(filepath, eeg_data.astype(np.float32))
+    np.save(
+        OUTPUT_DIR / stimulus_file,
+        stimulus_eeg.astype(np.float32)
+    )
 
-    return filename
+    np.save(
+        OUTPUT_DIR / baseline_file,
+        baseline_eeg.astype(np.float32)
+    )
 
+    return stimulus_file, baseline_file
 
 def process_subject(subject, subject_id):
     records = []
@@ -73,6 +89,7 @@ def process_subject(subject, subject_id):
     eeg_struct = subject["EEG"][0, 0]
 
     stimuli_trials = eeg_struct["stimuli"][0, 0]
+    baseline_trials = eeg_struct['baseline'][0, 0]
 
     valence_scores = subject["ScoreValence"][0, 0].flatten()
     arousal_scores = subject["ScoreArousal"][0, 0].flatten()
@@ -82,14 +99,17 @@ def process_subject(subject, subject_id):
 
     for trial_idx in range(num_trials):
 
-        eeg_trial = stimuli_trials[trial_idx, 0]
+        stimulus_eeg = stimuli_trials[trial_idx, 0]
+        baseline_eeg = baseline_trials[trial_idx, 0]
 
-        filename = save_trial_eeg(
-            eeg_trial,
-            subject_id,
-            trial_idx + 1
+        stimulus_file, baseline_file = (
+            save_trial_eeg(
+                stimulus_eeg,
+                baseline_eeg,
+                subject_id,
+                trial_idx + 1
+            )
         )
-
         valence = float(valence_scores[trial_idx])
         arousal = float(arousal_scores[trial_idx])
         dominance = float(dominance_scores[trial_idx])
@@ -98,10 +118,16 @@ def process_subject(subject, subject_id):
             {
                 "subject_id": subject_id,
                 "trial_id": trial_idx + 1,
+                "stimulus_file": stimulus_file,
+                "baseline_file": baseline_file,
 
-                "eeg_file": filename,
+                "stimulus_shape": list(
+                    stimulus_eeg.shape
+                ),
 
-                "shape": list(eeg_trial.shape),
+                "baseline_shape": list(
+                    baseline_eeg.shape
+                ),
 
                 "age": age,
                 "gender": gender,
