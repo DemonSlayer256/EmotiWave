@@ -44,6 +44,36 @@ BANDS = {
     "gamma": (30, 45)
 }
 
+WINDOW_SIZE = 2 * FS  # 2 seconds
+
+
+ASYMMETRY_PAIRS = [
+    ("AF3", "AF4"),
+    ("F7", "F8"),
+    ("F3", "F4"),
+    ("FC5", "FC6"),
+    ("T7", "T8"),
+    ("P7", "P8")
+]
+
+
+def compute_window_de(signal):
+    de_values = []
+
+    for start in range(
+        0,
+        len(signal) - WINDOW_SIZE + 1,
+        WINDOW_SIZE
+    ):
+        window = signal[
+            start:start + WINDOW_SIZE
+        ]
+
+        de_values.append(
+            differential_entropy(window)
+        )
+
+    return np.array(de_values)
 
 def bandpass_filter(signal, low, high, fs=FS, order=4):
     nyquist = 0.5 * fs
@@ -72,35 +102,210 @@ def differential_entropy(signal):
         2 * np.pi * np.e * variance
     )
 
+def safe_divide(a, b, eps=1e-10):
+    return a / (b + eps)
 
-def extract_trial_features(eeg):
+def normalize_per_subject(df):
+
+    feature_cols = [
+        col
+        for col in df.columns
+        if col not in [
+            "subject_id",
+            "trial_id",
+            "label"
+        ]
+    ]
+
+    df[feature_cols] = (
+        df.groupby("subject_id")[feature_cols]
+        .transform(
+            lambda x:
+            (x - x.mean())
+            /
+            (x.std() + 1e-8)
+        )
+    )
+
+    return df
+
+def extract_trial_features(
+    stimulus_eeg,
+    baseline_eeg
+):
     features = {}
+
+    stim_cache = {}
+    base_cache = {}
+    de_summary = {}
 
     for ch_idx, channel_name in enumerate(CHANNELS):
 
-        channel_signal = eeg[:, ch_idx]
+        de_summary[channel_name] = {}
+        stim_signal = (
+            stimulus_eeg[:, ch_idx]
+            - np.mean(
+                stimulus_eeg[:, ch_idx]
+            )
+        )
+
+        base_signal = (
+            baseline_eeg[:, ch_idx]
+            - np.mean(
+                baseline_eeg[:, ch_idx]
+            )
+        )
+
+        stim_cache[channel_name] = {}
+        base_cache[channel_name] = {}
 
         for band_name, (low, high) in BANDS.items():
 
-            filtered = bandpass_filter(
-                channel_signal,
+            stim_filtered = bandpass_filter(
+                stim_signal,
                 low,
                 high
             )
 
-            de = differential_entropy(
-                filtered
+            base_filtered = bandpass_filter(
+                base_signal,
+                low,
+                high
             )
 
-            feature_name = (
-                f"{channel_name}_{band_name}"
+            stim_cache[channel_name][
+                band_name
+            ] = stim_filtered
+
+            base_cache[channel_name][
+                band_name
+            ] = base_filtered
+
+            stim_de = compute_window_de(
+                stim_filtered
             )
 
-            features[feature_name] = de
+            base_de = compute_window_de(
+                base_filtered
+            )
+
+            de_summary[channel_name][band_name] = (
+            np.mean(stim_de)
+            - np.mean(base_de)
+            )
+            
+            band_feature = {
+                "mean":
+                    np.mean(stim_de) - np.mean(base_de),
+
+                "std":
+                    np.std(stim_de) - np.std(base_de),
+
+                "max":
+                    np.max(stim_de) - np.max(base_de),
+
+                "min":
+                    np.min(stim_de) - np.min(base_de),
+
+                "median":
+                    np.median(stim_de) - np.median(base_de)
+            }
+
+            for stat_name, value in band_feature.items():
+
+                features[
+                    f"{channel_name}_{band_name}_{stat_name}"
+                ] = value
+        total_energy = sum(
+            abs(
+                de_summary[channel_name][band]
+            )
+            for band in BANDS
+        )
+
+        for band_name in BANDS:
+
+            relative_energy = safe_divide(
+                de_summary[channel_name][band_name],
+                total_energy
+            )
+
+            features[
+                f"{channel_name}_{band_name}_relative"
+            ] = relative_energy
+
+        alpha = de_summary[channel_name]["alpha"]
+        beta = de_summary[channel_name]["beta"]
+        theta = de_summary[channel_name]["theta"]
+        gamma = de_summary[channel_name]["gamma"]
+
+        features[
+            f"{channel_name}_alpha_beta_ratio"
+        ] = safe_divide(alpha, beta)
+
+        features[
+            f"{channel_name}_theta_beta_ratio"
+        ] = safe_divide(theta, beta)
+
+        features[
+            f"{channel_name}_alpha_gamma_ratio"
+        ] = safe_divide(alpha, gamma)
+
+    for left, right in ASYMMETRY_PAIRS:
+        for band_name in BANDS:
+
+            stim_left = np.mean(
+                compute_window_de(
+                    stim_cache[left][band_name]
+                )
+            )
+
+            stim_right = np.mean(
+                compute_window_de(
+                    stim_cache[right][band_name]
+                )
+            )
+
+            base_left = np.mean(
+                compute_window_de(
+                    base_cache[left][band_name]
+                )
+            )
+
+            base_right = np.mean(
+                compute_window_de(
+                    base_cache[right][band_name]
+                )
+            )
+
+            da_feature = (
+                (stim_left - stim_right)
+                -
+                (base_left - base_right)
+            )
+
+            features[
+                f"DA_{left}_{right}_{band_name}"
+            ] = da_feature
+
+            rasm_feature = (
+            safe_divide(
+                stim_left,
+                stim_right
+            )
+            -
+            safe_divide(
+                base_left,
+                base_right
+            )
+        )
+
+            features[
+                f"RASM_{left}_{right}_{band_name}"
+            ] = rasm_feature
 
     return features
-
-
+            
 def load_metadata():
     with open(
         INTERIM_DIR / "metadata.json",
@@ -119,15 +324,20 @@ def build_dataset(metadata, label_key):
 
         print(
             f"[{idx}/{total}] "
-            f"{record['eeg_file']}"
+            f"{record['stimulus_file']}"
         )
 
-        eeg = np.load(
-            INTERIM_DIR / record["eeg_file"]
+        stimulus = np.load(
+            INTERIM_DIR / record["stimulus_file"]
+        )
+
+        baseline = np.load(
+            INTERIM_DIR / record['baseline_file']
         )
 
         features = extract_trial_features(
-            eeg
+            stimulus, 
+            baseline
         )
 
         row = {
@@ -164,13 +374,13 @@ def main():
 
     datasets = {
         "features_valence.csv":
-            "valence_class",
+            "valence_class"
 
-        "features_arousal.csv":
-            "arousal_class",
+        # "features_arousal.csv":
+        #     "arousal_class",
 
-        "features_dominance.csv":
-            "dominance_class"
+        # "features_dominance.csv":
+        #     "dominance_class"
     }
 
     for filename, label_key in datasets.items():
@@ -178,11 +388,16 @@ def main():
         print(
             f"\nCreating {filename}"
         )
-
         df = build_dataset(
             metadata,
             label_key
         )
+
+        print(
+            "Applying subject-wise normalization..."
+        )
+
+        df = normalize_per_subject(df)
 
         save_dataset(
             df,
