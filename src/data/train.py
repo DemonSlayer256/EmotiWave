@@ -1,377 +1,234 @@
+"""
+train.py — High-Performance XGBoost Pipeline for Windowed DREAMER Data
+
+Fixes implemented for Windowed Layout:
+  1. Replaced slow RBF SVM with highly efficient, regularized XGBoost models.
+  2. Integrated StratifiedGroupKFold for Subject-Dependent CV to stop intra-trial window leakage.
+  3. Integrated LeaveOneGroupOut for Subject-Independent CV (LOSO) paired with window-level CORAL.
+  4. Explicitly dropped 'window_id' from feature spaces to prevent index learning.
+"""
+
 from pathlib import Path
+import warnings
+warnings.filterwarnings("ignore")
 
 import numpy as np
 import pandas as pd
-
 from xgboost import XGBClassifier
 
-from sklearn.model_selection import (
-    StratifiedKFold,
-    RandomizedSearchCV
-)
+from sklearn.model_selection import StratifiedGroupKFold, LeaveOneGroupOut
+from sklearn.feature_selection import SelectKBest, mutual_info_classif
+from sklearn.metrics import (accuracy_score, balanced_accuracy_score,
+                             f1_score, roc_auc_score, matthews_corrcoef)
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.pipeline import Pipeline
 
-from sklearn.utils.class_weight import (
-    compute_sample_weight
-)
+BINARY_DATASET   = Path("data/processed/features_valence.csv")
+QUAD_DATASET     = Path("data/processed/features_quadrant.csv")
+TOP_K            = 60   # Keep top 60 features via MI selection
 
-from sklearn.metrics import (
-    accuracy_score,
-    precision_score,
-    recall_score,
-    f1_score,
-    roc_auc_score
-)
 
-from sklearn.feature_selection import SelectKBest
-from sklearn.feature_selection import mutual_info_classif
+def load_windowed(path):
+    """Loads windowed feature CSVs and builds strict separation groupings."""
+    df = pd.read_csv(path)
+    
+    sub_groups = df["subject_id"].values
+    # Prevent cross-window leakage from the same trial clip
+    trial_groups = (df["subject_id"].astype(str) + "_" + df["trial_id"].astype(str)).values
+    
+    y = df["label"].values
+    # Strip administrative descriptors out of the model training matrix
+    X = df.drop(columns=["subject_id", "trial_id", "window_id", "label"], errors="ignore")
+    
+    print(f"  {path.name}: shape={df.shape} classes={dict(zip(*np.unique(y, return_counts=True)))}")
+    return X, y, sub_groups, trial_groups
 
-def select_features(X_train, y_train, X_test):
 
-    selector = SelectKBest(
-        score_func=mutual_info_classif,
-        k=100
+def coral(Xs, Xt):
+    """Covariance Domain Alignment across source and target feature distributions."""
+    reg = 1e-4 * np.eye(Xs.shape[1])
+    cs = np.cov(Xs, rowvar=False) + reg
+    ct = np.cov(Xt, rowvar=False) + reg
+    try:
+        Ut, St, _ = np.linalg.svd(ct)
+        Wt = Ut @ np.diag(1 / np.sqrt(np.clip(St, 1e-10, None))) @ Ut.T
+        Us, Ss, _ = np.linalg.svd(cs)
+        Ws = Us @ np.diag(np.sqrt(np.clip(Ss, 1e-10, None))) @ Us.T
+        return Xt @ Wt @ Ws
+    except Exception:
+        return Xt
+
+
+def select(Xtr, ytr, Xte):
+    """Mutual Information feature sub-selection layer."""
+    k = min(TOP_K, Xtr.shape[1])
+    sel = SelectKBest(mutual_info_classif, k=k)
+    return sel.fit_transform(Xtr, ytr), sel.transform(Xte)
+
+def build_xgb(n_class=2):
+    """Returns an optimized XGBoost pipeline wrapper with your best search parameters."""
+    objective = "binary:logistic" if n_class == 2 else "multi:softprob"
+    
+    return XGBClassifier(
+        n_estimators=300,        # Scaled up for stable learning steps
+        max_depth=4,             # Kept shallow to prevent overfitting
+        learning_rate=0.01,      # Dropped lower for precise gradient descents
+        subsample=0.9,           # Your optimized row sampling rate
+        colsample_bytree=0.8,    # Your optimized feature sampling rate
+        objective=objective,
+        eval_metric="logloss" if n_class == 2 else "mlogloss",
+        random_state=42,
+        n_jobs=-1                # Still utilizes all 4 cores on Codespaces
     )
 
-    X_train = selector.fit_transform(
-        X_train,
-        y_train
-    )
-
-    X_test = selector.transform(
-        X_test
-    )
-
-    return X_train, X_test, selector
-
-DATASET = Path(
-    "data/processed/features_valence.csv"
-)
-
-
-def load_dataset():
-    print("\n[LOAD DATASET]")
-
-    df = pd.read_csv(DATASET)
-
-    print(
-        f"Dataset Shape: {df.shape}"
-    )
-
-    return df
-
-
-def prepare_data(df):
-    print("\n[PREPARE DATA]")
-
-    X = df.drop(
-        columns=[
-            "subject_id",
-            "trial_id",
-            "label"
-        ]
-    )
-
-    y = df["label"]
-
-    print(
-        f"Features Shape: {X.shape}"
-    )
-
-    print(
-        f"Labels Shape: {y.shape}"
-    )
-
-    print("\nLabel Distribution")
-
-    print(
-        y.value_counts()
-        .sort_index()
-    )
-
-    return X, y
-
-
-def hyperparameter_search(X, y):
-    print(
-        "\n[HYPERPARAMETER SEARCH]"
-    )
-
-    negatives = (
-        y == 0
-    ).sum()
-
-    positives = (
-        y == 1
-    ).sum()
-
-    scale_pos_weight = (
-        negatives / positives
-    )
-
-    param_dist = {
-
-        "n_estimators": [
-            100,
-            200,
-            300,
-            500
-        ],
-
-        "max_depth": [
-            3,
-            4,
-            5,
-            6,
-            8
-        ],
-
-        "learning_rate": [
-            0.01,
-            0.03,
-            0.05,
-            0.1
-        ],
-
-        "subsample": [
-            0.7,
-            0.8,
-            0.9,
-            1.0
-        ],
-
-        "colsample_bytree": [
-            0.7,
-            0.8,
-            0.9,
-            1.0
-        ]
+def metrics_binary(yt, yp, yprob):
+    return {
+        "acc": accuracy_score(yt, yp),
+        "bal": balanced_accuracy_score(yt, yp),
+        "f1": f1_score(yt, yp, zero_division=0),
+        "auc": roc_auc_score(yt, yprob) if len(np.unique(yt)) > 1 else 0.5,
+        "mcc": matthews_corrcoef(yt, yp)
     }
 
-    model = XGBClassifier(
-        random_state=42,
-        eval_metric="logloss",
-        scale_pos_weight=scale_pos_weight
-    )
 
-    search = RandomizedSearchCV(
-        estimator=model,
-        param_distributions=param_dist,
-        n_iter=20,
-        cv=5,
-        scoring="f1",
-        random_state=42,
-        n_jobs=-1,
-        verbose=1
-    )
-
-    search.fit(
-        X,
-        y
-    )
-
-    print("\n[BEST PARAMETERS]")
-    print(
-        search.best_params_
-    )
-
-    print(
-        f"Best CV F1: "
-        f"{search.best_score_:.4f}"
-    )
-
-    return search.best_estimator_
+def metrics_multi(yt, yp):
+    return {
+        "acc": accuracy_score(yt, yp),
+        "bal": balanced_accuracy_score(yt, yp),
+        "f1_macro": f1_score(yt, yp, average="macro", zero_division=0),
+        "mcc": matthews_corrcoef(yt, yp)
+    }
 
 
-def cross_validation_evaluation(
-    model,
-    X,
-    y
-):
-    print(
-        "\n[CROSS VALIDATION]"
-    )
+def summarize(rows, title, cols):
+    df = pd.DataFrame(rows)
+    print(f"\n{'='*50}\n {title}\n{'='*50}")
+    for c in cols:
+        if c in df:
+            print(f"  {c:<16} {df[c].mean():.4f} ± {df[c].std():.4f}")
 
-    skf = StratifiedKFold(
-        n_splits=5,
-        shuffle=True,
-        random_state=42
-    )
 
-    accuracy_scores = []
-    precision_scores = []
-    recall_scores = []
-    f1_scores = []
-    roc_scores = []
+# ═══════════════════════════════════════════
+# LEAK-PROOF SUBJECT-DEPENDENT INTERFACE
+# ═══════════════════════════════════════════
+def eval_subject_dependent(X, y, sub_groups, trial_groups, n_class=2):
+    tag = "binary" if n_class == 2 else "4-class"
+    print(f"\n{'='*55}\nSUBJECT-DEPENDENT ({tag}, Window-Level 5-Fold SGKF)\n{'='*55}")
+    
+    Xn = X.values
+    subs = np.unique(sub_groups)
+    all_m = []
+    
+    # Ensure label ranges match exactly [0, n_classes - 1] for XGBoost requirements
+    le = LabelEncoder()
+    y_encoded = le.fit_transform(y)
 
-    for fold, (
-        train_idx,
-        test_idx
-    ) in enumerate(
-        skf.split(X, y),
-        start=1
-    ):
+    for s in subs:
+        mask = sub_groups == s
+        Xs, ys, ts = Xn[mask], y_encoded[mask], trial_groups[mask]
+        
+        # Enforce keeping windows from identical clips entirely grouped together
+        sgkf = StratifiedGroupKFold(n_splits=5)
+        fm = []
+        
+        for tr, te in sgkf.split(Xs, ys, groups=ts):
+            Xtr, Xte = Xs[tr], Xs[te]
+            ytr, yte = ys[tr], ys[te]
+            
+            if len(np.unique(ytr)) < 2: 
+                continue
+                
+            Xtr_s, Xte_s = select(Xtr, ytr, Xte)
+            
+            sc = StandardScaler()
+            Xtr_sc = sc.fit_transform(Xtr_s)
+            Xte_sc = sc.transform(Xte_s)
+            
+            model = build_xgb(n_class=n_class)
+            model.fit(Xtr_sc, ytr)
+            yp = model.predict(Xte_sc)
+            
+            if n_class == 2:
+                yprob = model.predict_proba(Xte_sc)[:, 1]
+                fm.append(metrics_binary(yte, yp, yprob))
+            else:
+                fm.append(metrics_multi(yte, yp))
+                
+        if not fm: 
+            continue
+        df_fold = pd.DataFrame(fm)
+        print(f"  S{s:02d}  acc={df_fold['acc'].mean():.3f}  bal={df_fold['bal'].mean():.3f} (5-fold group locked)")
+        all_m.append(df_fold.mean().to_dict())
+        
+    cols = ["acc", "bal", "f1", "auc", "mcc"] if n_class == 2 else ["acc", "bal", "f1_macro", "mcc"]
+    summarize(all_m, f"SUBJECT-DEPENDENT SUMMARY ({tag})", cols)
 
-        print(
-            f"\nFold {fold}"
-        )
 
-        X_train = X.iloc[
-            train_idx
-        ]
-
-        X_test = X.iloc[
-            test_idx
-        ]
-
-        y_train = y.iloc[
-            train_idx
-        ]
-
-        y_test = y.iloc[
-            test_idx
-        ]
-
-        weights = (
-            compute_sample_weight(
-                class_weight="balanced",
-                y=y_train
-            )
-        )
-
-        model.fit(
-            X_train,
-            y_train,
-            sample_weight=weights
-        )
-
-        y_pred = model.predict(
-            X_test
-        )
-
-        y_prob = (
-            model.predict_proba(
-                X_test
-            )[:, 1]
-        )
-
-        acc = accuracy_score(
-            y_test,
-            y_pred
-        )
-
-        prec = precision_score(
-            y_test,
-            y_pred,
-            zero_division=0
-        )
-
-        rec = recall_score(
-            y_test,
-            y_pred,
-            zero_division=0
-        )
-
-        f1 = f1_score(
-            y_test,
-            y_pred,
-            zero_division=0
-        )
-
-        roc = roc_auc_score(
-            y_test,
-            y_prob
-        )
-
-        accuracy_scores.append(
-            acc
-        )
-
-        precision_scores.append(
-            prec
-        )
-
-        recall_scores.append(
-            rec
-        )
-
-        f1_scores.append(
-            f1
-        )
-
-        roc_scores.append(
-            roc
-        )
-
-        print(
-            f"Accuracy={acc:.4f} "
-            f"Precision={prec:.4f} "
-            f"Recall={rec:.4f} "
-            f"F1={f1:.4f} "
-            f"ROC_AUC={roc:.4f}"
-        )
-
-    print(
-        "\n[FINAL RESULTS]"
-    )
-
-    print(
-        f"Accuracy  : "
-        f"{np.mean(accuracy_scores):.4f} "
-        f"± {np.std(accuracy_scores):.4f}"
-    )
-
-    print(
-        f"Precision : "
-        f"{np.mean(precision_scores):.4f} "
-        f"± {np.std(precision_scores):.4f}"
-    )
-
-    print(
-        f"Recall    : "
-        f"{np.mean(recall_scores):.4f} "
-        f"± {np.std(recall_scores):.4f}"
-    )
-
-    print(
-        f"F1 Score  : "
-        f"{np.mean(f1_scores):.4f} "
-        f"± {np.std(f1_scores):.4f}"
-    )
-
-    print(
-        f"ROC AUC   : "
-        f"{np.mean(roc_scores):.4f} "
-        f"± {np.std(roc_scores):.4f}"
-    )
+# ═══════════════════════════════════════════
+# REVISED SUBJECT-INDEPENDENT (LOSO) INTERFACE
+# ═══════════════════════════════════════════
+def eval_subject_independent(X, y, sub_groups, n_class=2):
+    tag = "binary" if n_class == 2 else "4-class"
+    print(f"\n{'='*55}\nSUBJECT-INDEPENDENT ({tag}, LOSO + CORAL + XGBoost)\n{'='*55}")
+    
+    Xn = X.values
+    logo = LeaveOneGroupOut()
+    results = []
+    
+    le = LabelEncoder()
+    y_encoded = le.fit_transform(y)
+    
+    for tr_i, te_i in logo.split(Xn, y_encoded, sub_groups):
+        s = sub_groups[te_i[0]]
+        Xtr, Xte = Xn[tr_i], Xn[te_i]
+        ytr, yte = y_encoded[tr_i], y_encoded[te_i]
+        
+        Xtr_s, Xte_s = select(Xtr, ytr, Xte)
+        
+        sc = StandardScaler()
+        Xtr_sc = sc.fit_transform(Xtr_s)
+        Xte_sc = sc.transform(Xte_s)
+        
+        # Align target subject features with source subject distribution metrics
+        Xte_sc = coral(Xtr_sc, Xte_sc)
+        
+        model = build_xgb(n_class=n_class)
+        model.fit(Xtr_sc, ytr)
+        yp = model.predict(Xte_sc)
+        
+        if n_class == 2:
+            yprob = model.predict_proba(Xte_sc)[:, 1]
+            mv = metrics_binary(yte, yp, yprob)
+            results.append(mv)
+            print(f"  S{s:02d}  acc={mv['acc']:.3f}  bal={mv['bal']:.3f}  auc={mv['auc']:.3f}")
+        else:
+            mv = metrics_multi(yte, yp)
+            results.append(mv)
+            print(f"  S{s:02d}  acc={mv['acc']:.3f}  bal={mv['bal']:.3f}")
+            
+    cols = ["acc", "bal", "f1", "auc", "mcc"] if n_class == 2 else ["acc", "bal", "f1_macro", "mcc"]
+    summarize(results, f"SUBJECT-INDEPENDENT SUMMARY ({tag})", cols)
 
 
 def main():
-    print(
-        "\nTraining Valence Classifier"
-    )
+    print("\n" + "="*55)
+    print("DREAMER High-Density Pipeline — Multi-Core XGBoost Engine")
+    print("="*55)
 
-    df = load_dataset()
+    print("\n── Binary (valence) ──")
+    Xv, yv, g_sub, g_trial = load_windowed(BINARY_DATASET)
+    eval_subject_dependent(Xv, yv, g_sub, g_trial, n_class=2)
+    eval_subject_independent(Xv, yv, g_sub, n_class=2)
 
-    X, y = prepare_data(
-        df
-    )
+    if QUAD_DATASET.exists():
+        print("\n── 4-quadrant (valence × arousal) ──")
+        Xq, yq, g_sub, g_trial = load_windowed(QUAD_DATASET)
+        eval_subject_dependent(Xq, yq, g_sub, g_trial, n_class=4)
+        eval_subject_independent(Xq, yq, g_sub, n_class=4)
+    else:
+        print(f"\n[SKIP] {QUAD_DATASET} not found — run parallel feature extraction first.")
 
-    best_model = (
-        hyperparameter_search(
-            X,
-            y
-        )
-    )
-
-    cross_validation_evaluation(
-        best_model,
-        X,
-        y
-    )
-
-    print(
-        "\nTraining Complete"
-    )
+    print("\nDone.")
 
 
 if __name__ == "__main__":
