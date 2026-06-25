@@ -171,13 +171,6 @@ def extract_window_features(stim_win_eeg, base_averages):
             
     return feats
 
-def make_quadrant_label(valence_score, arousal_score):
-    hv = valence_score > 3.0
-    ha = arousal_score > 3.0
-    if hv and ha:  return 0
-    if not hv and ha: return 1
-    if hv and not ha: return 2
-    return 3
 
 # --- PARALLEL UNIT TASK ---
 def process_single_trial(rec, label_key, quad):
@@ -199,7 +192,7 @@ def process_single_trial(rec, label_key, quad):
         stim_win = stim[start:start+WINDOW_SIZE, :]
         f = extract_window_features(stim_win, base_averages)
         
-        lbl = make_quadrant_label(rec["valence"], rec["arousal"]) if quad else rec[label_key]
+        lbl = rec[label_key]
         
         trial_rows.append({
             "subject_id": rec["subject_id"],
@@ -241,8 +234,7 @@ def main():
     print("Loading metadata …"); meta = load_metadata()
     datasets = {
         "features_valence.csv": ("valence_class", False),
-        "features_arousal.csv": ("arousal_class", False),
-        "features_quadrant.csv": ("", True),
+        "features_arousal.csv": ("arousal_class", False)
     }
     for fname, (lkey, quad) in datasets.items():
         print(f"\nCreating {fname}")

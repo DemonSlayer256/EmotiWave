@@ -23,8 +23,9 @@ from sklearn.metrics import (accuracy_score, balanced_accuracy_score,
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.pipeline import Pipeline
 
-BINARY_DATASET   = Path("data/processed/features_valence.csv")
+VALENCE_DATASET   = Path("data/processed/features_valence.csv")
 QUAD_DATASET     = Path("data/processed/features_quadrant.csv")
+AROUSAL_DATASET  = Path("data/processed/features_arousal.csv")
 TOP_K            = 60   # Keep top 60 features via MI selection
 
 
@@ -210,24 +211,30 @@ def eval_subject_independent(X, y, sub_groups, n_class=2):
     summarize(results, f"SUBJECT-INDEPENDENT SUMMARY ({tag})", cols)
 
 
+def run_binary_task(name, path):
+    print(f"\n── Binary ({name}) ──")
+
+    X, y, g_sub, g_trial = load_windowed(path)
+
+    eval_subject_dependent(
+        X, y,
+        g_sub,
+        g_trial,
+        n_class=2
+    )
+
+    eval_subject_independent(
+        X, y,
+        g_sub,
+        n_class=2
+    )
+
 def main():
     print("\n" + "="*55)
     print("DREAMER High-Density Pipeline — Multi-Core XGBoost Engine")
     print("="*55)
-
-    print("\n── Binary (valence) ──")
-    Xv, yv, g_sub, g_trial = load_windowed(BINARY_DATASET)
-    eval_subject_dependent(Xv, yv, g_sub, g_trial, n_class=2)
-    eval_subject_independent(Xv, yv, g_sub, n_class=2)
-
-    if QUAD_DATASET.exists():
-        print("\n── 4-quadrant (valence × arousal) ──")
-        Xq, yq, g_sub, g_trial = load_windowed(QUAD_DATASET)
-        eval_subject_dependent(Xq, yq, g_sub, g_trial, n_class=4)
-        eval_subject_independent(Xq, yq, g_sub, n_class=4)
-    else:
-        print(f"\n[SKIP] {QUAD_DATASET} not found — run parallel feature extraction first.")
-
+    run_binary_task("arousal", AROUSAL_DATASET)
+    run_binary_task("valence", VALENCE_DATASET)
     print("\nDone.")
 
 
