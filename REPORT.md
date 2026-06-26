@@ -322,28 +322,52 @@ This project implemented a reproducible EEG-based emotion recognition pipeline f
 
 ## 9. REFERENCES
 
-[1] G. Koelstra et al., "DEAP: A Database for Emotion Analysis; Using Physiological Signals," in IEEE Transactions on Affective Computing, 2012.
+[1] G. Koelstra et al., "DEAP: A Database for Emotion Analysis Using Physiological Signals," IEEE Transactions on Affective Computing, vol. 3, no. 1, pp. 18–31, Jan.–Mar. 2012.
 
-[2] DREAMER Dataset, Zenodo. [Online]. Available: https://zenodo.org/records/546113
+[2] S. Katsigiannis and N. Ramzan, "DREAMER: A Database for Emotion Recognition Through EEG and ECG Signals From Wireless Low-Cost Off-the-Shelf Devices," IEEE Journal of Biomedical and Health Informatics, vol. 22, no. 1, pp. 98–107, Jan. 2018.
 
-[3] C. Chen and M. Guestrin, "XGBoost: A Scalable Tree Boosting System," in Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), 2016.
+[3] T. Chen and C. Guestrin, "XGBoost: A Scalable Tree Boosting System," in Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), 2016, pp. 785–794.
 
-[4] P. D. Welch, "The use of fast Fourier transform for the estimation of power spectra: A method based on time averaging over short, modified periodograms," IEEE Transactions on Audio and Electroacoustics, vol. AU-15, no. 2, pp. 70–73, 1967.
+[4] P. D. Welch, "The Use of Fast Fourier Transform for the Estimation of Power Spectra: A Method Based on Time Averaging Over Short, Modified Periodograms," IEEE Transactions on Audio and Electroacoustics, vol. AU-15, no. 2, pp. 70–73, Jun. 1967.
 
-[5] B. Zheng and B.-L. Lu, "Investigating Critical Frequency Bands and Channels for EEG-based Emotion Recognition with Deep Neural Networks," 2015.
+[5] W.-L. Zheng and B.-L. Lu, "Investigating Critical Frequency Bands and Channels for EEG-Based Emotion Recognition with Deep Neural Networks," IEEE Transactions on Autonomous Mental Development, vol. 7, no. 3, pp. 162–175, Sept. 2015.
 
-[6] B. Sun and K. Saenko, "Return of Frustratingly Easy Domain Adaptation," in AAAI, 2016.
+[6] B. Sun and K. Saenko, "Deep CORAL: Correlation Alignment for Deep Domain Adaptation," in Proceedings of the European Conference on Computer Vision (ECCV) Workshops, 2016.
 
-[7] A. Lotte et al., "A review of classification algorithms for EEG-based brain–computer interfaces: a 10 year update," Journal of Neural Engineering, 2018.
+[7] A. Lotte, L. Bougrain, A. Cichocki, M. Clerc, M. Congedo, A. Rakotomamonjy, and F. Yger, "A Review of Classification Algorithms for EEG-Based Brain–Computer Interfaces: A 10 Year Update," Journal of Neural Engineering, vol. 15, no. 3, 2018.
 
-[8] I. Goodfellow, Y. Bengio, and A. Courville, "Deep Learning," MIT Press, 2016.
+[8] I. Goodfellow, Y. Bengio, and A. Courville, Deep Learning. Cambridge, MA, USA: MIT Press, 2016.
 
-[9] J. Sorge, A. Author, and B. Researcher, "Avoiding data leakage in subject-independent EEG classification," in Proceedings of the International Conference on Affective Computing, 2020.
+[9] A. V. Kamrud, B. J. Borghetti, and C. M. Schubert Kabban, "The Effects of Individual Differences, Non-Stationarity and the Importance of Data Partitioning Decisions for Training and Testing of EEG Cross-Participant Models," Sensors, vol. 21, no. 9, Art. no. 3225, 2021.
 
-[10] G. Varoquaux, "Cross-validation failure: small sample sizes lead to large error bars," Journal of Machine Learning Research, 2018.
+[10] G. Varoquaux, "Cross-Validation Failure: Small Sample Sizes Lead to Large Error Bars," NeuroImage, vol. 180, pp. 68–77, 2018.
 
-[11] S. Paiva, L. Annotator, and T. Study, "Label uncertainty and human agreement in affective datasets," Affective Science, 2019.
+[11] W.-L. Zheng and B.-L. Lu, "Personalizing EEG-Based Affective Models with Transfer Learning," in Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelligence (IJCAI), 2016.
 
-[12] B. Recht, R. Roelofs, L. Schmidt, and V. Shankar, "Do ImageNet classifiers generalize to ImageNet?", in Proceedings of the 36th International Conference on Machine Learning (ICML), 2019.
+[12] B. Recht, R. Roelofs, L. Schmidt, and V. Shankar, "Do ImageNet Classifiers Generalize to ImageNet?," in Proceedings of the 36th International Conference on Machine Learning (ICML), 2019.
 
-[13] M. Example, "Empirical bounds on cross-subject EEG accuracy," Journal of Neural Engineering, 2021.
+[13] G. Varoquaux, P. R. Raamana, D. A. Engemann, A. Hoyos-Idrobo, Y. Schwartz, and B. Thirion, "Assessing and Tuning Brain Decoders: Cross-Validation, Caveats, and Guidelines," NeuroImage, vol. 145, Part B, pp. 166–179, 2017.
+
+[14] R. Jenke, A. Peer, and M. Buss, "Feature Extraction and Selection for Emotion Recognition from EEG," IEEE Transactions on Affective Computing, vol. 5, no. 3, pp. 327–339, Jul.–Sep. 2014.
+
+[15] S. Katsigiannis and N. Ramzan, "DREAMER: A Database for Emotion Recognition Through EEG and ECG Signals From Wireless Low-Cost Off-the-Shelf Devices," IEEE Journal of Biomedical and Health Informatics, vol. 22, no. 1, pp. 98–107, Jan. 2018.
+
+[16] W.-L. Zheng, J.-Y. Zhu, Y. Peng, and B.-L. Lu, "EEG-Based Emotion Classification Using Deep Belief Networks," in Proc. IEEE International Conference on Multimedia and Expo (ICME), 2014, pp. 1–6.
+
+[17] Y. Li, J. Huang, Z. Zhou, and G. Zhong, "Cross-Subject Emotion Recognition Using Deep Domain Adaptation on EEG Signals," IEEE Access, vol. 8, pp. 21200–21210, 2020.
+
+[18] S. Bashivan, I. Rish, M. Yeasin, and N. Codella, "Learning Representations from EEG with Deep Recurrent-Convolutional Neural Networks," in Proc. International Conference on Learning Representations (ICLR), 2016.
+
+[19] Y. Roy, H. Banville, I. Albuquerque, A. Gramfort, T. H. Falk, and J. Faubert, "Deep Learning-Based Electroencephalography Analysis: A Systematic Review," Journal of Neural Engineering, vol. 16, no. 5, 2019.
+
+[20] R. T. Schirrmeister, J. T. Springenberg, L. D. J. Fiederer, M. Glasstetter, K. Eggensperger, M. Tangermann, F. Hutter, W. Burgard, and T. Ball, "Deep Learning with Convolutional Neural Networks for EEG Decoding and Visualization," Human Brain Mapping, vol. 38, no. 11, pp. 5391–5420, 2017.
+
+[21] A. Higuchi, "Approach to an Irregular Time Series on the Basis of the Fractal Theory," Physica D: Nonlinear Phenomena, vol. 31, no. 2, pp. 277–283, 1988.
+
+[22] B. Hjorth, "EEG Analysis Based on Time Domain Properties," Electroencephalography and Clinical Neurophysiology, vol. 29, no. 3, pp. 306–310, 1970.
+
+[23] N. Bigdely-Shamlo, T. Mullen, C. Kothe, K. M. Su, and K. Robbins, "The PREP Pipeline: Standardized Preprocessing for Large-Scale EEG Analysis," Frontiers in Neuroinformatics, vol. 9, Art. no. 16, 2015.
+
+[24] F. Lotte, L. Bougrain, and M. Cichocki, "A Review of Classification Algorithms for EEG-Based Brain–Computer Interfaces: A 10 Year Update," Journal of Neural Engineering, vol. 15, no. 3, 2018.
+
+[25] M. Craik, Y. He, and J. L. Contreras-Vidal, "Deep Learning for Electroencephalogram (EEG) Classification Tasks: A Review," Journal of Neural Engineering, vol. 16, no. 3, 2019.
