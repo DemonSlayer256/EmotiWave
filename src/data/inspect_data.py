@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 
 DATA_DIR = Path("data/interim")
 PLOT_PATH = Path("logs/plots/eeg_trial_subject_1.png")
+SAMPLING_RATE = 128
 files = sorted(DATA_DIR.glob("*.npy"))
 
 with open(DATA_DIR / "metadata.json", "r") as f:
@@ -51,13 +52,20 @@ def inspect_balance():
 def inspect_trial():
     print("\nEEG VISUALIZATION")
     PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    eeg = np.load(DATA_DIR / "S01_T01.npy")
-    plt.figure(figsize=(12, 5))
-    plt.plot(eeg[:, 0])
-    plt.title("Subject 1 Trial 1 - Channel 1")
-    plt.xlabel("Samples")
-    plt.ylabel("Amplitude")
-    plt.savefig(PLOT_PATH, dpi=300, bbox_inches="tight")
+    baseline = np.load(DATA_DIR / "S01_T01_baseline.npy")
+    stimulus = np.load(DATA_DIR / "S01_T01_stimulus.npy")
+    figure, axes = plt.subplots(2, 1, figsize=(12, 7))
+
+    for axis, eeg, label in zip(axes, (baseline, stimulus), ("Baseline", "Stimulus")):
+        time = np.arange(eeg.shape[0]) / SAMPLING_RATE
+        axis.plot(time, eeg[:, 0], linewidth=0.7)
+        axis.set_title(label)
+        axis.set_xlabel("Time (seconds)")
+        axis.set_ylabel("Amplitude")
+
+    figure.suptitle("Subject 1 Trial 1 - Channel 1")
+    figure.tight_layout()
+    figure.savefig(PLOT_PATH, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"Plot saved to: {PLOT_PATH}")
 
