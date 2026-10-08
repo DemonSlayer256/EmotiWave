@@ -19,7 +19,8 @@ from xgboost import XGBClassifier
 from sklearn.model_selection import StratifiedGroupKFold, LeaveOneGroupOut
 from sklearn.feature_selection import SelectKBest, mutual_info_classif
 from sklearn.metrics import (accuracy_score, balanced_accuracy_score,
-                             f1_score, roc_auc_score, matthews_corrcoef)
+                             f1_score, roc_auc_score, matthews_corrcoef,
+                             confusion_matrix)
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.pipeline import Pipeline
 
@@ -168,13 +169,15 @@ def eval_subject_dependent(X, y, sub_groups, trial_groups, n_class=2):
 # ═══════════════════════════════════════════
 # REVISED SUBJECT-INDEPENDENT (LOSO) INTERFACE
 # ═══════════════════════════════════════════
-def eval_subject_independent(X, y, sub_groups, n_class=2):
+def eval_subject_independent(X, y, sub_groups, n_class=2, task_name="task"):
     tag = "binary" if n_class == 2 else "4-class"
     print(f"\n{'='*55}\nSUBJECT-INDEPENDENT ({tag}, LOSO + CORAL + XGBoost)\n{'='*55}")
     
     Xn = X.values
     logo = LeaveOneGroupOut()
     results = []
+    all_y_true = []
+    all_y_pred = []
     
     le = LabelEncoder()
     y_encoded = le.fit_transform(y)
@@ -196,6 +199,8 @@ def eval_subject_independent(X, y, sub_groups, n_class=2):
         model = build_xgb(n_class=n_class)
         model.fit(Xtr_sc, ytr)
         yp = model.predict(Xte_sc)
+        all_y_true.extend(yte)
+        all_y_pred.extend(yp)
         
         if n_class == 2:
             yprob = model.predict_proba(Xte_sc)[:, 1]
@@ -207,6 +212,16 @@ def eval_subject_independent(X, y, sub_groups, n_class=2):
             results.append(mv)
             print(f"  S{s:02d}  acc={mv['acc']:.3f}  bal={mv['bal']:.3f}")
             
+    labels = np.arange(len(le.classes_))
+    matrix = confusion_matrix(all_y_true, all_y_pred, labels=labels)
+    matrix_df = pd.DataFrame(matrix, index=le.classes_, columns=le.classes_)
+    matrix_path = Path("outputs/metrics") / f"confusion_matrix_{task_name}_subject_independent.csv"
+    matrix_path.parent.mkdir(parents=True, exist_ok=True)
+    matrix_df.to_csv(matrix_path, index_label="Actual / Predicted")
+    print(f"\nSUBJECT-INDEPENDENT CONFUSION MATRIX ({task_name})")
+    print(matrix_df.to_string())
+    print(f"Saved to: {matrix_path}")
+
     cols = ["acc", "bal", "f1", "auc", "mcc"] if n_class == 2 else ["acc", "bal", "f1_macro", "mcc"]
     summarize(results, f"SUBJECT-INDEPENDENT SUMMARY ({tag})", cols)
 
@@ -226,14 +241,15 @@ def run_binary_task(name, path):
     eval_subject_independent(
         X, y,
         g_sub,
-        n_class=2
+        n_class=2,
+        task_name=name
     )
 
 def main():
     print("\n" + "="*55)
     print("DREAMER High-Density Pipeline — Multi-Core XGBoost Engine")
     print("="*55)
-    run_binary_task("arousal", AROUSAL_DATASET)
+    ## run_binary_task("arousal", AROUSAL_DATASET)
     run_binary_task("valence", VALENCE_DATASET)
     print("\nDone.")
 
