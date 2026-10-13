@@ -14,12 +14,14 @@ Author: Derek
 from pathlib import Path
 import json
 
+import matplotlib.pyplot as plt
 import numpy as np
 from scipy.io import loadmat
 
 
 RAW_FILE = Path("data/raw/DREAMER.mat")
 OUTPUT_DIR = Path("data/interim")
+QUADRANT_PLOT_PATH = Path("logs/plots/valence_intensity_quadrants.png")
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -156,6 +158,64 @@ def save_metadata(metadata):
         )
 
 
+def plot_valence_intensity_quadrants(metadata):
+    counts = [[0, 0], [0, 0]]
+
+    for record in metadata:
+        valence_class = record["valence_class"]
+        intensity_class = record["arousal_class"]
+        counts[intensity_class][valence_class] += 1
+
+    total_trials = sum(sum(row) for row in counts)
+    if total_trials == 0:
+        raise ValueError("Cannot plot valence and intensity without trials.")
+
+    figure, axis = plt.subplots(figsize=(8, 6))
+    image = axis.imshow(counts, cmap="Blues", origin="lower")
+    max_count = max(max(row) for row in counts)
+
+    for intensity_class in range(2):
+        for valence_class in range(2):
+            count = counts[intensity_class][valence_class]
+            valence_label = "Positive" if valence_class else "Negative"
+            intensity_label = "High" if intensity_class else "Low"
+            percentage = count / total_trials * 100
+            color = (
+                "white"
+                if max_count and count >= max_count * 0.55
+                else "#1f2937"
+            )
+            axis.text(
+                valence_class,
+                intensity_class,
+                f"{valence_label} valence\n"
+                f"{intensity_label} intensity\n"
+                f"{count} trials ({percentage:.1f}%)",
+                ha="center",
+                va="center",
+                color=color,
+            )
+
+    axis.set_xticks([0, 1], labels=["Negative", "Positive"])
+    axis.set_yticks([0, 1], labels=["Low", "High"])
+    axis.set_xlabel("Valence")
+    axis.set_ylabel("Intensity (arousal)")
+    axis.set_title("DREAMER Trial Distribution by Valence and Intensity")
+    figure.colorbar(image, ax=axis, label="Number of trials")
+    figure.text(
+        0.5,
+        0.01,
+        "Ratings <= 3 are negative/low; ratings > 3 are positive/high.",
+        ha="center",
+    )
+    figure.tight_layout(rect=(0, 0.04, 1, 1))
+
+    QUADRANT_PLOT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    figure.savefig(QUADRANT_PLOT_PATH, dpi=300, bbox_inches="tight")
+    plt.close(figure)
+    print(f"Valence/intensity graph saved to: {QUADRANT_PLOT_PATH}")
+
+
 def main():
     print("=" * 60)
     print("Loading DREAMER Dataset")
@@ -186,6 +246,7 @@ def main():
         all_metadata.extend(records)
 
     save_metadata(all_metadata)
+    plot_valence_intensity_quadrants(all_metadata)
 
     print("\nProcessing Complete")
     print(f"Total Trials: {len(all_metadata)}")
