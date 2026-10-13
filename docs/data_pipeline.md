@@ -157,12 +157,16 @@ Tasks Performed:
 5. Generate binary labels
 6. Save EEG recordings as NumPy arrays
 7. Generate metadata index
+8. Plot the trial counts across positive/negative valence and high/low intensity quadrants
 
 Output:
 
 ```text
 data/interim/
+logs/plots/valence_intensity_quadrants.png
 ```
+
+The graph uses the generated valence and arousal classes (arousal as the intensity measure). Ratings `<= 3` are negative/low and ratings `> 3` are positive/high, matching `create_binary_label`.
 
 ---
 

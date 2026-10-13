@@ -79,7 +79,7 @@ Process the raw MATLAB file into NumPy trial files and `metadata.json`:
 python src/data/process_data.py
 ```
 
-This writes per-trial stimulus and baseline arrays into `data/interim/` and creates `data/interim/metadata.json`.
+This writes per-trial stimulus and baseline arrays into `data/interim/`, creates `data/interim/metadata.json`, and saves a valence/intensity quadrant count graph to `logs/plots/valence_intensity_quadrants.png`. Valence uses negative/positive classes and arousal is used as the intensity measure; ratings `<= 3` are negative/low, while ratings `> 3` are positive/high.
 
 Extract features (windowed, baseline-corrected):
 
